@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.list{
+    display: none;
+}
+
+.container{
+    
+    width: 1216px;
+    height: 591px;
+    flex-shrink: 0;
+}
+
+.container-subscribe{
+    margin-bottom: 80px;
+}
+
+.title-subscribe{
+    /* text-align: center; */
+    width: 740px;
+    color: #ffffg;
+    text-align: center;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-family: DM Sans;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px; /* 100% */
+    letter-spacing: -2.56px;
+    text-transform: uppercase;
+}
+
+.description{
+    /* width: 492px; */
+    color: #FFFh;
+    text-align: center;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.56px;
+}
+
+.subscribe-form{
+    text-align: center;
+}
+.input-email{
+    margin-top:  80px;
+    width: 292px;
+height: 48px;
+flex-shrink: 0;
+    border-radius: 100px;
+    border: 1px solid #FFFh;
+    opacity: 0.3;
+}
+
+.btn{
+
+    display: inline-flex;
+padding: 15px 35px;
+border-radius: 100px;
+background: #9DC162;
+border:none;
+}
+
+.btn.send{
+}
+
+.section-subscribe-list{
+display: flex;
+}
+
+.melon-image{
+    width: 792px;
+height: 502px;
+border-radius: 20px;
+}
+
+.bule-berry-image{
+    width: 400px;
+height: 502px;
+border-radius: 20px;
+}
+
+
+
+.footer-section{
+    margin-top: 80px;
+    display: flex;
+}
+.footer-container{
+    display: flex;
+}
+.footer-logo{
+
+}
+
+.footer-menu{
+
+}
+.footer-social-contact{
+
+}
