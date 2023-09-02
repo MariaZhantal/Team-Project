@@ -1,108 +1,207 @@
-*{
-    margin: 0;
-    padding: 0;
+:root {
+  --pink-red: #ae1332;
+  --olivine: #a4cb66;
+  --yelow: #f5ce13;
+  --black: #000000;
+  --white: #ffffff;
 }
 
-.list{
-    display: none;
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.56px;
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.container{
-    
-    width: 1216px;
-    height: 591px;
-    flex-shrink: 0;
+.list {
+  text-decoration: none;
+  list-style: none;
 }
 
-.container-subscribe{
-    margin-bottom: 80px;
+.container {
+  width: 375px;
+  margin: 0 auto;
+  padding: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 1280px;
+  }
 }
 
-.title-subscribe{
-    /* text-align: center; */
-    width: 740px;
-    color: #ffffg;
+.title-subscribe {
+  width: 335px;
+  color: #fff;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 100% */
+  letter-spacing: -1.28px;
+  text-transform: uppercase;
+  position: absolute;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    color: #fff;
     text-align: center;
-    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
-    font-family: DM Sans;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 64px; /* 100% */
-    letter-spacing: -2.56px;
-    text-transform: uppercase;
-}
-
-.description{
-    /* width: 492px; */
-    color: #FFFh;
-    text-align: center;
-    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.10);
-    font-family: DM Sans;
-    font-size: 14px;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+    font-family: DM San;
+    font-size: 54px;
     font-style: normal;
     font-weight: 400;
+    line-height: 54px; /* 100% */
+    letter-spacing: -2.16px;
+    text-transform: uppercase;
+  }
+}
+
+.container-subscribe {
+  display: flex;
+  justify-content: center; /* Center horizontally within the container */
+  /* align-items: center; Center vertically within the container */
+  /* height: 100vh; Use viewport height to make the container full height */
+  background-color: #ae1332;
+}
+
+.subscribe-description {
+  @media screen and (min-width: 768px) {
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 350;
     line-height: 18px; /* 128.571% */
     letter-spacing: -0.56px;
+    padding-top: 80px;
+  }
 }
 
-.subscribe-form{
+/* .melon-image {
+    padding: 10px;
+    align-items: center;
     text-align: center;
-}
-.input-email{
-    margin-top:  80px;
-    width: 292px;
-height: 48px;
-flex-shrink: 0;
-    border-radius: 100px;
-    border: 1px solid #FFFh;
-    opacity: 0.3;
-}
-
-.btn{
-
-    display: inline-flex;
-padding: 15px 35px;
-border-radius: 100px;
-background: #9DC162;
-border:none;
-}
-
-.btn.send{
-}
-
-.section-subscribe-list{
-display: flex;
-}
-
-.melon-image{
-    width: 792px;
-height: 502px;
-border-radius: 20px;
-}
-
-.bule-berry-image{
-    width: 400px;
-height: 502px;
-border-radius: 20px;
-}
-
-
-
-.footer-section{
-    margin-top: 80px;
+    justify-content: center;
+    width: 300px;
+    height: 441px;
+    border-radius: 20px;
+    border-radius: 20px;
+  } */
+.section-subscribe-list {
+  @media screen and (min-width: 768px) {
     display: flex;
+    padding-top: 79px;
+    gap: 16px;
+  }
 }
-.footer-container{
+
+.subscribe-container {
+  @media screen and (min-width: 768px) {
+    background-color: #ae1332;
+  }
+}
+
+.melon-image {
+  /* Existing styles */
+  padding-top: 53px;
+  /* Add the following styles for centering */
+  margin: 0 auto;
+  width: 335px;
+  height: 476px;
+  border-radius: 20px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+  }
+}
+
+.blueberry-image {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    width: 344px;
+    height: 480px;
     display: flex;
-}
-.footer-logo{
-
+  }
 }
 
-.footer-menu{
-
+.subscribe-container {
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
 }
-.footer-social-contact{
 
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 144px;
+}
+
+.subscribe-form {
+  /* position: absolute; */
+}
+
+.input-email {
+  /* width: 292px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  opacity: 0.3; */
+}
+
+.btn {
+  /* display: inline-flex;
+  padding: 15px 35px;
+  align-items: center;
+  gap: 15px;
+  border-radius: 100px;
+  background: #9dc162;
+  border: none; */
+}
+
+.btn {
+  position: absolute;
+  height: 48px;
+}
+
+.btn {
+  background-color: #9dc162;
+  border-radius: 100px;
+  padding: 15px 35px;
+  border: none;
+  right: 238px;
+  color: #fff;
+}
+
+.input-email {
+  width: 292px;
+  height: 48px;
+  background-color: transparent;
+  border-radius: 100px;
+  border: 1px solid #fff;
+  opacity: 0.3;
+}
+
+.input-email::placeholder {
+  padding-left: 24px;
+  opacity: 0.5;
+  color: #fff;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  letter-spacing: -0.56px;
 }
