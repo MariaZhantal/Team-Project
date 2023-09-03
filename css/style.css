@@ -49,8 +49,43 @@ body {
   letter-spacing: -1.28px;
   text-transform: uppercase;
   position: absolute;
+}
 
-  @media screen and (min-width: 768px) {
+.container-subscribe {
+  display: flex;
+  justify-content: center; /* Center horizontally within the container */
+  /* align-items: center; Center vertically within the container */
+  /* height: 100vh; Use viewport height to make the container full height */
+  background-color: #ae1332;
+}
+
+.melon-image {
+  padding-top: 53px;
+  /* Add the following styles for centering */
+  margin: 0 auto;
+  width: 335px;
+  height: 476px;
+  border-radius: 20px;
+}
+
+.blueberry-image {
+  display: none;
+}
+
+.subscribe-description {
+  display: none;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 144px;
+}
+
+/*  For Tablet  */
+@media screen and (min-width: 768px) {
+  .title-subscribe {
     width: 768px;
     color: #fff;
     text-align: center;
@@ -63,20 +98,29 @@ body {
     letter-spacing: -2.16px;
     text-transform: uppercase;
   }
-}
 
-.container-subscribe {
-  display: flex;
-  justify-content: center; /* Center horizontally within the container */
-  /* align-items: center; Center vertically within the container */
-  /* height: 100vh; Use viewport height to make the container full height */
-  background-color: #ae1332;
-}
+  .subscribe-container {
+    width: 768px;
+    background-color: #ae1332;
+  }
 
-.subscribe-description {
-  @media screen and (min-width: 768px) {
+  .melon-image {
+    padding-top: 0;
+    width: 344px;
+    height: 480px;
+  }
+
+  .blueberry-image {
+    width: 344px;
+    height: 480px;
+    display: flex;
+  }
+
+  .subscribe-description {
+    display: flex;
     color: #ffffff;
     text-align: center;
+    justify-content: center;
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
     font-size: 14px;
     font-style: normal;
@@ -85,67 +129,119 @@ body {
     letter-spacing: -0.56px;
     padding-top: 80px;
   }
-}
 
-/* .melon-image {
-    padding: 10px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    width: 300px;
-    height: 441px;
-    border-radius: 20px;
-    border-radius: 20px;
-  } */
-.section-subscribe-list {
-  @media screen and (min-width: 768px) {
+  .section-subscribe-list {
     display: flex;
     padding-top: 79px;
     gap: 16px;
   }
+
+  .btn {
+    position: absolute;
+    height: 48px;
+  }
+
+  .btn {
+    background-color: #9dc162;
+    border-radius: 100px;
+    padding: 15px 35px;
+    border: none;
+    right: 238px;
+    color: #fff;
+  }
+
+  .input-email {
+    width: 292px;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    opacity: 0.3;
+  }
+
+  .input-email::placeholder {
+    padding-left: 24px;
+    opacity: 0.5;
+    color: #fff;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.56px;
+  }
 }
 
-.subscribe-container {
-  @media screen and (min-width: 768px) {
+/*  For Desktop  */
+
+@media screen and (min-width: 1280px) {
+  width: 1280px;
+
+  .title-subscribe {
+    width: 1280px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+    font-family: DM San;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 54px; /* 100% */
+    letter-spacing: -2.56px;
+    text-transform: uppercase;
+  }
+
+  .subscribe-container {
+    width: 1280px;
     background-color: #ae1332;
   }
-}
 
-.melon-image {
-  /* Existing styles */
-  padding-top: 53px;
-  /* Add the following styles for centering */
-  margin: 0 auto;
-  width: 335px;
-  height: 476px;
-  border-radius: 20px;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 0;
+  .melon-image {
+    width: 792px;
+    height: 502px;
+    border-radius: 20px;
   }
-}
 
-.blueberry-image {
-  display: none;
-
-  @media screen and (min-width: 768px) {
-    width: 344px;
-    height: 480px;
-    display: flex;
+  .blueberry-image {
+    width: 400px;
+    height: 502px;
+    border-radius: 20px;
   }
-}
 
-.subscribe-container {
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  .btn {
+    position: absolute;
+    height: 48px;
   }
-}
 
-.subscribe-form {
-  display: flex;
-  justify-content: center;
-  padding-top: 80px;
-  padding-bottom: 144px;
+  .btn {
+    background-color: #9dc162;
+    border-radius: 100px;
+    padding: 15px 35px;
+    border: none;
+    right: 495px;
+    color: #fff;
+  }
+
+  .input-email {
+    width: 292px;
+    height: 48px;
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    opacity: 0.3;
+  }
+
+  .input-email::placeholder {
+    padding-left: 24px;
+    opacity: 0.5;
+    color: #fff;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    letter-spacing: -0.56px;
+  }
 }
 
 .subscribe-form {
@@ -154,54 +250,19 @@ body {
 
 .input-email {
   /* width: 292px;
-  height: 48px;
-  flex-shrink: 0;
-  border-radius: 100px;
-  border: 1px solid #fff;
-  opacity: 0.3; */
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 1px solid #fff;
+    opacity: 0.3; */
 }
 
 .btn {
   /* display: inline-flex;
-  padding: 15px 35px;
-  align-items: center;
-  gap: 15px;
-  border-radius: 100px;
-  background: #9dc162;
-  border: none; */
-}
-
-.btn {
-  position: absolute;
-  height: 48px;
-}
-
-.btn {
-  background-color: #9dc162;
-  border-radius: 100px;
-  padding: 15px 35px;
-  border: none;
-  right: 238px;
-  color: #fff;
-}
-
-.input-email {
-  width: 292px;
-  height: 48px;
-  background-color: transparent;
-  border-radius: 100px;
-  border: 1px solid #fff;
-  opacity: 0.3;
-}
-
-.input-email::placeholder {
-  padding-left: 24px;
-  opacity: 0.5;
-  color: #fff;
-  font-family: DM Sans;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px; /* 128.571% */
-  letter-spacing: -0.56px;
+    padding: 15px 35px;
+    align-items: center;
+    gap: 15px;
+    border-radius: 100px;
+    background: #9dc162;
+    border: none; */
 }
